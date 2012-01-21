@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document id="12110054">
+		<Style id="sensor-congested">
+			<IconStyle id="defaultIconStyle">
+				<color>ff0000ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="13205705">
+				<color>ff0000ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-movingcongestion">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00c8ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="2628939">
+				<color>ff00c8ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-syncflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ffff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="9734221">
+				<color>ff00ffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-freeflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ff00</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="867695">
+				<color>ff00ff00</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-offline">
+			<IconStyle id="defaultIconStyle">
+				<color>00000000</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="3779465">
+				<color>ff000000</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="road">
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="13328393">
+				<color>ffffffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Folder id="927929">
+			<name>sensors</name>
+			<description><![CDATA[Traffic sensors: each sensor detects cars/s rates for each direction]]>
+			</description>
+			<Placemark id="s-1">
+				<name>s-1</name>
+				<description>680 sensor 1 (Montague Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="26425437">
+					<coordinates>
+						-121.880616,37.414860,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-3">
+				<name>s-3</name>
+				<description>680 sensor 3 (N. Capitol Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="13177628">
+					<coordinates>
+						-121.875908,37.399499,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-5">
+				<name>s-5</name>
+				<description>680 sensor 5 (Berryessa Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="14525019">
+					<coordinates>
+						-121.863240,37.384718,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-7">
+				<name>s-7</name>
+				<description>680 sensor 7 (McKee Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="16471729">
+					<coordinates>
+						-121.846223,37.367924,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-9">
+				<name>s-9</name>
+				<description>680 sensor 9 (Alum Rock Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="6603598">
+					<coordinates>
+						-121.841142,37.359559,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-11">
+				<name>s-11</name>
+				<description>680 sensor 11 (E. Capitol Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="33414193">
+					<coordinates>
+						-121.839007,37.355819,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-13">
+				<name>s-13</name>
+				<description>680 sensor 13 (Highway 101)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="10351444">
+					<coordinates>
+						-121.852138,37.339536,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-15">
+				<name>s-15</name>
+				<description>680 sensor 15 (10th St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="15668093">
+					<coordinates>
+						-121.872040,37.328131,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-17">
+				<name>s-17</name>
+				<description>680 sensor 17 (S. 1st St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="14886914">
+					<coordinates>
+						-121.883305,37.326050,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-19">
+				<name>s-19</name>
+				<description>680 sensor 19 (Interstate 280)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="11678224">
+					<coordinates>
+						-121.892107,37.323725,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-21">
+				<name>s-21</name>
+				<description>680 sensor 21 (Bird Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="30562042">
+					<coordinates>
+						-121.898981,37.322039,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-23">
+				<name>s-23</name>
+				<description>680 sensor 23 (Meridian Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="6997089">
+					<coordinates>
+						-121.914697,37.315182,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-25">
+				<name>s-25</name>
+				<description>680 sensor 25 (Interstate 880)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="29751107">
+					<coordinates>
+						-121.940692,37.317387,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-27">
+				<name>s-27</name>
+				<description>680 sensor 27 (San Tomas Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="1623405">
+					<coordinates>
+						-121.964268,37.316283,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-29">
+				<name>s-29</name>
+				<description>680 sensor 29 (Saratoga Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="28606871">
+					<coordinates>
+						-121.975759,37.317477,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-31">
+				<name>s-31</name>
+				<description>680 sensor 31 (Lawrence Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="21202114">
+					<coordinates>
+						-121.996802,37.321377,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-33">
+				<name>s-33</name>
+				<description>680 sensor 33 (N. Wolfe Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="15512193">
+					<coordinates>
+						-122.014769,37.330281,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-35">
+				<name>s-35</name>
+				<description>680 sensor 35 (N. de Anza Blvd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="13480046">
+					<coordinates>
+						-122.032802,37.334368,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder id="26453615">
+			<name>roads</name>
+			<description><![CDATA[The roads]]>
+			</description>
+			<Placemark id="680">
+				<name>Interstate 680/280 (Sinclair Fwy/Junipero Serra Fwy)</name>
+				<styleUrl>#road</styleUrl>
+				<LineString id="9688764">
+					<coordinates>
+						-121.88482592636652,37.42693465365301,0.0
+						-121.88322221939404,37.42407502232286,0.0
+						-121.8808803730442,37.415519397540784,0.0
+						-121.87459214048998,37.39576702825606,0.0
+						-121.86837738458152,37.38958109095706,0.0
+						-121.86296962242844,37.38449663028662,0.0
+						-121.84648999013878,37.36836403615738,0.0
+						-121.84086833969425,37.359556739683434,0.0
+						-121.83873977972324,37.35537849905855,0.0
+						-121.83769076717195,37.352304875358605,0.0
+						-121.83882740743024,37.349690335423425,0.0
+						-121.84354986409728,37.34557923246145,0.0
+						-121.8521346106955,37.339755001453405,0.0
+						-121.86873580688795,37.32919324290319,0.0
+						-121.87286495561628,37.32791979352508,0.0
+						-121.87999779170752,37.32733110306143,0.0
+						-121.8841331288183,37.325619695482445,0.0
+						-121.89238076923863,37.323727900857094,0.0
+						-121.89897476282465,37.322476583351914,0.0
+						-121.90203274992881,37.31944164709664,0.0
+						-121.90480386579435,37.31727921849157,0.0
+						-121.90894443035366,37.315129358733735,0.0
+						-121.91251171777238,37.314724576028965,0.0
+						-121.91714953812179,37.31607997941383,0.0
+						-121.9198762739978,37.31698014834919,0.0
+						-121.92919609683678,37.31662723613946,0.0
+						-121.93493626066312,37.317554292059455,0.0
+						-121.94453310461947,37.31698385274688,0.0
+						-121.95522251499598,37.3166410982852,0.0
+						-121.9700208179514,37.31633321559624,0.0
+						-121.97439777808881,37.316808860234865,0.0
+						-121.97739326253867,37.31814766201633,0.0
+						-121.99054235095986,37.318260573881425,0.0
+						-122.02156747183508,37.33427573371969,0.0
+						-122.0476004504152,37.334269360832394,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

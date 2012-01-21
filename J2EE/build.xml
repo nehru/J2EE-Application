@@ -1,0 +1,220 @@
+<project name="HEMS" default="jar" basedir=".">
+
+	<target name="init">
+		<property name="src.dir" value="${basedir}/src" />
+		<property name="out.dir" value="${basedir}/build" />
+		<property name="classes.dir" value="${out.dir}/classes" />
+		<property name="jboss.home" value="C:\jboss-4.2.2.GA" />
+		<property name="jboss.deploy" value="${jboss.home}/server/default/deploy" />
+		<property name="jboss.lib" value="${jboss.home}/server/default/lib" />
+		<property name="lib.dir" value="${basedir}/library" />
+				
+		<path id="phy.data.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>				
+			<pathelement location="${out.dir}/phy-data.jar" />
+		</path>
+		
+		
+		
+		<path id="ccc.kml.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>				
+			<pathelement location="${out.dir}/ccc-kml.jar" />
+		</path>
+		
+		
+		<path id="ccc.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>				
+				<pathelement location="${out.dir}/hems-ccc.jar" />
+		</path>
+				
+		<path id="phs.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>				
+			<pathelement location="${out.dir}/phs.jar" />
+		</path>
+				
+		<path id="dataCenter.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>				
+			<pathelement location="${out.dir}/dataCenter.jar" />
+		</path>
+		
+		
+		<path id="unit.test.path">
+			<fileset dir="${jboss.home}/client">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+			<pathelement location="${out.dir}/hemsTest.jar" />
+			<pathelement location="${out.dir}/ccc-kml.jar" />
+			<pathelement location="${out.dir}/dataCenter.jar" />
+			<pathelement location="${out.dir}/ccc-kml.jar" />
+		</path>		
+	
+	</target>
+		
+	<target name="help">
+		<echo>
+				Procedure to run the HEMS project		
+		</echo>
+	</target>		 	
+	
+	<target name="build" depends="init">
+		<mkdir dir="${out.dir}" />
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}">
+			<classpath>
+				<fileset dir="${jboss.home}/client">
+					<include name="**/*.jar" />
+				</fileset>
+				<fileset dir="${lib.dir}">
+    				<include name="**/*.jar"/>
+				</fileset>
+				<pathelement location="${classes.dir}" />
+			</classpath>
+		</javac>
+		<mkdir dir="${classes.dir}/rawData" />
+		<copy toDir="${classes.dir}/rawData">
+			<fileset dir="${src.dir}/rawData" />
+		</copy>
+		<copy file="${src.dir}/hems-queue-service.xml" toDir="${classes.dir}" />
+		<copy file="${src.dir}/persistence.xml" toDir="${classes.dir}" />
+	</target>
+
+	<target name="clean" depends="init">
+		<delete dir="${classes.dir}" quiet="true" />
+		<delete dir="${out.dir}" quiet="true" />
+	</target>
+
+	<target name="jar" depends="clean,build">
+		<mkdir dir="${out.dir}/ejb-jar/META-INF" />
+		
+		
+		<copy file="${basedir}/conf/persistence.xml" toDir="${out.dir}/ejb-jar/META-INF" />
+		
+		<copy toDir="${out.dir}/ejb-jar">
+		<fileset dir="${classes.dir}">
+			<include name="**/cmpe275/hems/**" />
+			<include name="**/rawData/*.kml" />
+			<include name="hems-queue-service.xml" />
+			<exclude name="**/rawData/*.txt" />
+		</fileset>
+		</copy>
+		
+		<jar destfile="${out.dir}/hems-manager.jar">
+			<fileset dir="${out.dir}/ejb-jar">
+				<include name="**/*" />
+			</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/ccc.jar">
+			<fileset dir="${classes.dir}">
+				<include name="**/cmpe275/hems/parameter/**" />
+				<include name="**/cmpe275/hems/data/**" />
+			</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/phy-data.jar">
+			<fileset dir="${classes.dir}">
+				<include name="**/phs/**" />
+				<include name="**/cmpe275/hems/data/**" />
+				<include name="**/cmpe275/hems/db/**" />
+			</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/dataCenter.jar">
+					<fileset dir="${classes.dir}">
+						<include name="**/cmpe275/hems/parameter/**" />
+						<include name="**/cmpe275/hems/data/**" />
+						<include name="**/processor/**" />
+					</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/ccc-kml.jar">
+			<fileset dir="${classes.dir}">
+				<include name="**/cmpe275/hems/parameter/**" />
+				<include name="**/cmpe275/hems/data/**" />
+				<include name="**/ccc/**" />
+			</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/hemsTest.jar">
+			<fileset dir="${classes.dir}">
+				<include name="**/cmpe275/hems/test/**" />
+			</fileset>
+		</jar>
+		
+	</target>
+	
+	
+	
+	<target name="deploy" depends="clean,jar">
+		<copy file="${out.dir}/hems-manager.jar" toDir="${jboss.deploy}" />
+		<copy toDir="${jboss.lib}" >
+			<fileset dir="${lib.dir}" />
+		</copy>
+	</target>
+		
+	<target name="gen-data" depends="jar">
+		<java classname="processor.DataCenter" fork="true">
+			<classpath refid="dataCenter.path"/>
+		</java>
+	</target>
+
+	<target name="ccc101" depends="jar">
+			<java classname="ccc.Receive101UpdatedKML" fork="true">
+				<classpath refid="ccc.kml.path"/>
+			</java>
+	</target>
+	
+	<target name="ccc880" depends="jar">
+			<java classname="ccc.Receive880UpdatedKML" fork="true">
+				<classpath refid="ccc.kml.path"/>
+			</java>
+	</target>
+	
+	<target name="ccc680" depends="jar">
+				<java classname="ccc.Receive680UpdatedKML" fork="true">
+					<classpath refid="ccc.kml.path"/>
+				</java>
+	</target>
+	
+	<target name="phs" depends="jar">
+		<java classname="phs.PhsClient" fork="true">
+			<classpath refid="phy.data.path"/>
+		</java>
+		</target>
+	
+	
+	<target name="testing" depends="jar">
+		<java classname="cmpe275.hems.test.HemsTest" fork="true">
+			<classpath refid="unit.test.path"/>
+		</java>
+	</target>
+	
+</project>

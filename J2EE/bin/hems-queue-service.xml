@@ -1,0 +1,97 @@
+<server>
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=DataQueue101">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=DataQueue880">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=DataQueue680">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+    
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=CCC101Queue">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+    
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=CCC880Queue">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+    
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+  	 name="jboss.mq.destination:service=Queue,name=CCC680Queue">
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+      <depends optional-attribute-name="SecurityManager">jboss.mq:service=SecurityManager</depends>
+      <attribute name="MessageCounterHistoryDayLimit">-1</attribute>
+      <attribute name="SecurityConf">
+        <security>
+          <role name="guest" read="true" write="true"/>
+          <role name="publisher" read="true" write="true" create="false"/>
+          <role name="noacc" read="false" write="false" create="false"/>
+        </security>
+      </attribute>
+    </mbean>
+    
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+      name="jboss.mq.destination:service=Queue,name=PhySendQ">
+      <attribute name="JNDIName">data/Request</attribute>
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+   </mbean>
+    
+    <mbean code="org.jboss.mq.server.jmx.Queue"
+      name="jboss.mq.destination:service=Queue,name=PhyReadQ">
+      <attribute name="JNDIName">data/Response</attribute>
+      <depends optional-attribute-name="DestinationManager">jboss.mq:service=DestinationManager</depends>
+   </mbean>
+ </server>

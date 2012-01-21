@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document id="10040639">
+		<Style id="sensor-congested">
+			<IconStyle id="defaultIconStyle">
+				<color>ff0000ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="22355327">
+				<color>ff0000ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-movingcongestion">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00c8ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="22438818">
+				<color>ff00c8ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-syncflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ffff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="13185532">
+				<color>ff00ffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-freeflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ff00</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="26440236">
+				<color>ff00ff00</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-offline">
+			<IconStyle id="defaultIconStyle">
+				<color>ff000000</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="27602911">
+				<color>ff000000</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="road">
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="29791654">
+				<color>ffffffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Folder id="9097070">
+			<name>sensors</name>
+			<description><![CDATA[Traffic sensors: each sensor detects cars/s rates for each direction]]>
+			</description>
+			<Placemark id="s-1">
+				<name>s-1</name>
+				<description>101 sensor 1 (Mountain View-Alviso Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="795840">
+					<coordinates>
+						-122.036332,37.401135,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-3">
+				<name>s-3</name>
+				<description>101 sensor 3 (N. Mathilda Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="9182681">
+					<coordinates>
+						-122.027585,37.398875,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-5">
+				<name>s-5</name>
+				<description>101 sensor 5 (N. Fair Oaks Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="31427481">
+					<coordinates>
+						-122.013088,37.395910,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-7">
+				<name>s-7</name>
+				<description>101 sensor 7 (N. Lawrence Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="16842840">
+					<coordinates>
+						-121.996421,37.391175,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-9">
+				<name>s-9</name>
+				<description>101 sensor 9 (Great America Pkwy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="4898828">
+					<coordinates>
+						-121.977024,37.385757,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-11">
+				<name>s-11</name>
+				<description>101 sensor 11 (Montague Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="30066395">
+					<coordinates>
+						-121.963911,37.382142,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-13">
+				<name>s-13</name>
+				<description>101 sensor 13 (Trimble Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="5122060">
+					<coordinates>
+						-121.942320,37.377137,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-15">
+				<name>s-15</name>
+				<description>101 sensor 15 (87, Guadulupe Pkwy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="22634321">
+					<coordinates>
+						-121.927562,37.373722,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-17">
+				<name>s-17</name>
+				<description>101 sensor 17 (N. 1st St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="22725577">
+					<coordinates>
+						-121.917441,37.372098,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-19">
+				<name>s-19</name>
+				<description>101 sensor 19 (Interstate 880)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="8897128">
+					<coordinates>
+						-121.901928,37.364297,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-21">
+				<name>s-21</name>
+				<description>101 sensor 21 (E. Hedding St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="17890856">
+					<coordinates>
+						-121.886330,37.362400,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-23">
+				<name>s-23</name>
+				<description>101 sensor 23 (McKee Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="30821431">
+					<coordinates>
+						-121.866714,37.354337,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-25">
+				<name>s-25</name>
+				<description>101 sensor 25 (Interstate 680/280)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="19653053">
+					<coordinates>
+						-121.852135,37.339755,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-27">
+				<name>s-27</name>
+				<description>101 sensor 27 (Story Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="27653945">
+					<coordinates>
+						-121.848900,37.336223,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-29">
+				<name>s-29</name>
+				<description>101 sensor 29 (Tully Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="15138573">
+					<coordinates>
+						-121.831632,37.318767,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-31">
+				<name>s-31</name>
+				<description>101 sensor 31 (E. Capitol Expy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="32079775">
+					<coordinates>
+						-121.816806,37.303303,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-33">
+				<name>s-33</name>
+				<description>101 sensor 33 (Hellyer Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="2654289">
+					<coordinates>
+						-121.809459,37.282880,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-35">
+				<name>s-35</name>
+				<description>101 sensor 35 (Blossom Hill Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="15628820">
+					<coordinates>
+						-121.798349,37.258261,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder id="20474136">
+			<name>roads</name>
+			<description><![CDATA[The roads]]>
+			</description>
+			<Placemark id="101">
+				<name>Highway 101 (Bayshore Fwy)</name>
+				<styleUrl>#road</styleUrl>
+				<LineString id="13419912">
+					<coordinates>
+						-122.04727729759243,37.403192520225176,0.0
+						-122.03551807098962,37.40047144899858,0.0
+						-122.02758766039803,37.398656005871054,0.0
+						-122.01281629522825,37.39568906088247,0.0
+						-121.99641836790151,37.39139361950123,0.0
+						-121.9770241136678,37.385757166927014,0.0
+						-121.96391147367919,37.38214204010279,0.0
+						-121.94943544925371,37.378075740377064,0.0
+						-121.94177759637962,37.376694601626,0.0
+						-121.92838172639841,37.37394825304726,0.0
+						-121.9179896844886,37.37210315100474,0.0
+						-121.91362254989309,37.37075025688652,0.0
+						-121.91089396291929,37.36984992218948,0.0
+						-121.90763624234708,37.36763178196694,0.0
+						-121.90438507700243,37.36497599422973,0.0
+						-121.90193410027942,37.36385921595554,0.0
+						-121.8920730299744,37.363329630804394,0.0
+						-121.8863299742128,37.36240045425054,0.0
+						-121.88222185538274,37.362142890171434,0.0
+						-121.87757536760154,37.361223648200856,0.0
+						-121.87321289377806,37.35965050329503,0.0
+						-121.86832873897858,37.35632173547856,0.0
+						-121.86644646209783,37.353896810813644,0.0
+						-121.85888213145674,37.34660337360531,0.0
+						-121.85213794069126,37.33953622442094,0.0
+						-121.84836201010057,37.33556095638732,0.0
+						-121.83190952094687,37.318551324630285,0.0
+						-121.81681315695234,37.30286583719607,0.0
+						-121.81088107352932,37.29689850815208,0.0
+						-121.80984429168295,37.29316831492764,0.0
+						-121.80962906417905,37.289446377266735,0.0
+						-121.80918831559471,37.282658822393174,0.0
+						-121.80464454810107,37.27561108331584,0.0
+						-121.80125554920247,37.26485508304814,0.0
+						-121.79807859347002,37.2580397282642,0.0
+						-121.78587080571116,37.25113201655333,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

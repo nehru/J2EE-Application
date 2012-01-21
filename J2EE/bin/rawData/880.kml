@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document id="24499883">
+		<Style id="sensor-congested">
+			<IconStyle id="defaultIconStyle">
+				<color>ff0000ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="22293109">
+				<color>ff0000ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-movingcongestion">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00c8ff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="19480755">
+				<color>ff00c8ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-syncflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ffff</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="29094346">
+				<color>ff00ffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-freeflow">
+			<IconStyle id="defaultIconStyle">
+				<color>ff00ff00</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="2056742">
+				<color>ff00ff00</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="sensor-offline">
+			<IconStyle id="defaultIconStyle">
+				<color>00000000</color>
+				<colorMode>normal</colorMode>
+				<scale>0.6</scale>
+			</IconStyle>
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="28705408">
+				<color>ff000000</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="road">
+			<LabelStyle id="defaultLineStyle">
+				<color>ffffffff</color>
+				<scale>0.6</scale>
+			</LabelStyle>
+			<LineStyle id="22057969">
+				<color>ffffffff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Folder id="18923308">
+			<name>sensors</name>
+			<description><![CDATA[Traffic sensors: each sensor detects cars/s rates for each direction]]>
+			</description>
+			<Placemark id="s-1">
+				<name>s-1</name>
+				<description>880 sensor 1 (Great mall Pkwy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="28290629">
+					<coordinates>
+						-121.913249,37.415603,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-3">
+				<name>s-3</name>
+				<description>880 sensor 3 (Montague Expry)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="14247437">
+					<coordinates>
+						-121.909332,37.402000,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-5">
+				<name>s-5</name>
+				<description>880 sensor 5 (E. Brokaw Rd)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="5629279">
+					<coordinates>
+						-121.904411,37.382043,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-7">
+				<name>s-7</name>
+				<description>880 sensor 7 (Old Bayshore Hwy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="6588476">
+					<coordinates>
+						-121.901593,37.368451,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-9">
+				<name>s-9</name>
+				<description>880 sensor 9 (N. 1st St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="8461448">
+					<coordinates>
+						-121.907769,37.358443,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-11">
+				<name>s-11</name>
+				<description>880 sensor 11 (Coleman Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="3916375">
+					<coordinates>
+						-121.918049,37.348910,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-13">
+				<name>s-13</name>
+				<description>880 sensor 13 (The Alameda)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="22797392">
+					<coordinates>
+						-121.926634,37.342643,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-15">
+				<name>s-15</name>
+				<description>880 sensor 15 (W. Hedding St)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="9192299">
+					<coordinates>
+						-121.940505,37.330733,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-17">
+				<name>s-17</name>
+				<description>880 sensor 17 (Interstate 280)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="13078969">
+					<coordinates>
+						-121.940418,37.317385,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-19">
+				<name>s-19</name>
+				<description>880 sensor 19 (E. Hamilton Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="28399250">
+					<coordinates>
+						-121.938820,37.294614,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-21">
+				<name>s-21</name>
+				<description>880 sensor 21 (E. Campbell Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="13905160">
+					<coordinates>
+						-121.937002,37.287596,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-23">
+				<name>s-23</name>
+				<description>880 sensor 23 (Camden Ave)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="9800632">
+					<coordinates>
+						-121.947639,37.271061,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="s-25">
+				<name>s-25</name>
+				<description>880 sensor 25 (85, W. Valley Fwy)</description>
+				<styleUrl>#sensor-clear</styleUrl>
+				<Point id="6349096">
+					<coordinates>
+						-121.956060,37.256037,0.000000
+					</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder id="15136722">
+			<name>roads</name>
+			<description><![CDATA[The roads]]>
+			</description>
+			<Placemark id="880">
+				<name>Interstate 880 (Nimitz Fwy)</name>
+				<styleUrl>#road</styleUrl>
+				<LineString id="26752749">
+					<coordinates>
+						-121.91667006347991,37.42569915382156,0.0
+						-121.91297501937628,37.4156000779227,0.0
+						-121.91008467086776,37.40682114645044,0.0
+						-121.90906695928875,37.40134155509077,0.0
+						-121.90468197341114,37.38226466941164,0.0
+						-121.90311346700321,37.376998715683484,0.0
+						-121.90184481334715,37.36998504910524,0.0
+						-121.90106713305163,37.36691449503738,0.0
+						-121.90220501069884,37.36408054039674,0.0
+						-121.90333006428445,37.362121692326355,0.0
+						-121.90750170939965,37.35800291599028,0.0
+						-121.91138935468736,37.35453780315268,0.0
+						-121.9180422907377,37.34934740294969,0.0
+						-121.9233085489784,37.34523805731608,0.0
+						-121.9263602880957,37.342640067478655,0.0
+						-121.93634239931613,37.334415425722305,0.0
+						-121.94022442614117,37.331168095651975,0.0
+						-121.94087988929104,37.32351556199157,0.0
+						-121.94069192568243,37.31738714967726,0.0
+						-121.94040201149855,37.29900432868565,0.0
+						-121.93855259293305,37.29417387824482,0.0
+						-121.93641725375326,37.29021607868005,0.0
+						-121.93727260700423,37.287816821194745,0.0
+						-121.9375771952278,37.28563142657591,0.0
+						-121.94394226566683,37.2808745014519,0.0
+						-121.94591684547544,37.27673464881559,0.0
+						-121.9473619406094,37.27127716988339,0.0
+						-121.94852090234745,37.26669238133496,0.0
+						-121.95076554346191,37.26277364653687,0.0
+						-121.95355739134033,37.25885970323223,0.0
+						-121.95578945116704,37.25581601124996,0.0
+						-121.95829804204944,37.252555893360984,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>
